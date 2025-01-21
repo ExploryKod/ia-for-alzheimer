@@ -24,7 +24,7 @@ html {
 }
 
 .nav-link {
-  @apply text-gray-600 hover:text-primary transition-colors;
+  @apply text-red-600 font-semibold hover:underline hover:underline-offset-8 transition-colors;
 }
 
 .mobile-menu {
