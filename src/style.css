@@ -30,3 +30,14 @@ html {
 .mobile-menu {
   @apply fixed top-[64px] right-0 h-[calc(100vh-64px)] w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out;
 }
+
+
+ a {
+   color: blue; /* Applique la couleur bleue aux liens */
+   text-decoration: none; /* Facultatif : enlève le soulignement */
+ }
+
+a:hover {
+  text-decoration: underline; /* Facultatif : ajoute un soulignement au survol */
+}
+
