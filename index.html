@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <title>Modern SPA</title>
   </head>
   <body class="bg-white text-gray-900">
@@ -56,31 +61,100 @@
       </div>
     </section>
 
+    <!-- Introduction Section -->
+    <section id="Introduction" class="section bg-gray-50">
+      <div class="container">
+        <h2 class="text-3xl md:text-4xl font-heading font-bold mb-12 animate-text">
+          Un défi majeur de santé publique au XXIe siècle
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <p>La maladie <span class="font-bold">d'Alzheimer</span> est une <span class="font-bold">pathologie neurodégénérative</span> complexe qui affecte des millions de personnes dans le monde. Cette maladie progressive altère les <span class="font-bold">fonctions cognitives</span>, notamment la <span class="font-bold">mémoire</span>, le <span class="font-bold">raisonnement</span> et le <span class="font-bold">comportement</span>, impactant profondément la qualité de vie des patients et de leurs proches.
+            En France, la situation est préoccupante. Actuellement, <span class="font-bold">1,2 million de personnes</span> sont atteintes de la maladie
+            d'Alzheimer. Chaque année, <span class="font-bold">225 000 nouveaux cas sont diagnostiqués</span>, soulignant l'ampleur croissante de ce défi de santé
+            publique. L'impact de cette maladie s'étend bien au-delà des patients eux-mêmes, touchant directement <span class="font-bold">3 millions</span> de
+            personnes si l'on inclut les proches aidants.
+            Bien que souvent associée au vieillissement, la maladie d'Alzheimer peut frapper à tout âge. En France, <span class="font-bold">32 000 personnes
+            de moins de 65 ans</span> sont atteintes de cette maladie. Cependant, le risque augmente significativement avec l'âge : <span class="font-bold">14,2%
+            des personnes de plus de 75 ans</span> sont touchées par Alzheimer ou une maladie apparentée.</p>
+            <p class="mt-6">Les symptômes de la maladie d'Alzheimer se manifestent progressivement et varient d'une personne à l'autre. Les premiers
+            signes incluent généralement des <span class="font-bold">troubles de la mémoire</span> à court terme, des <span class="font-bold">difficultés à effectuer des tâches
+            quotidiennes</span>, des <span class="font-bold">problèmes de langage</span> et une <span class="font-bold">désorientation spatio-temporelle</span>. Au fil du temps, ces symptômes s'aggravent, affectant la capacité de la personne à communiquer, à reconnaître ses proches et à prendre soin d'elle-même.
+            À l'échelle mondiale, l'impact de la maladie d'Alzheimer et des démences apparentées est considérable. Environ <span class="font-bold">55
+            millions de personnes</span> vivent avec une forme de démence, dont Alzheimer est la principale cause. Chaque année, environ <span class="font-bold">10
+            millions de nouveaux cas</span> sont diagnostiqués dans le monde. La démence est actuellement la septième cause de décès à
+            l'échelle mondiale, représentant un coût estimé à plus de <span class="font-bold">880 milliards d'euros en 2019.</span></p>
+          </div>
+          <div>
+            <img class="w-4/6 m-auto" src="/public/woman.jpg" alt=""/>
+          </div>
+      </div>
+      <div class="border-t my-6"></div>
+      <div>
+        <p>Les projections pour l'avenir sont alarmantes. D'ici 2050, on estime que <span class="font-bold">2,2 millions de personnes</span> vivront avec la
+          maladie d'Alzheimer en France. Au niveau mondial, ce chiffre pourrait atteindre <span class="font-bold">139 millions de personnes</span> atteintes
+          d'Alzheimer ou de maladies apparentées.
+          Face à ces défis, la recherche médicale s'intensifie pour mieux comprendre les mécanismes de la maladie et
+          développer des traitements plus efficaces. Parallèlement, <span class="font-bold">l'intelligence artificielle (IA)</span> ouvre de nouvelles perspectives
+          prometteuses dans le <span class="font-bold">diagnostic précoce</span>, le <span class="font-bold">suivi des patients</span> et <span class="font-bold">l'aide aux aidants</span>.
+          L'IA pourrait révolutionner la détection précoce de la maladie en analysant des données complexes issues d'examens
+          d'imagerie cérébrale ou de tests cognitifs. Elle pourrait également contribuer à <span class="font-bold">personnaliser les traitements</span> en
+          fonction des caractéristiques individuelles de chaque patient. De plus, des applications basées sur l'IA pourraient
+          aider les patients à <span class="font-bold">maintenir</span> leur autonomie plus longtemps et <span class="font-bold">soutenir les aidants</span> dans leur rôle crucial.
+          Bien que la maladie d'Alzheimer reste un défi majeur, les avancées scientifiques et technologiques offrent de
+          l'espoir. En combinant la recherche médicale traditionnelle avec les innovations de l'IA, nous pouvons envisager un avenir où
+          le diagnostic, le traitement et la prise en charge de cette maladie seront considérablement améliorés, offrant une
+          meilleure qualité de vie aux patients et à leurs proches.</p>
+      </div>
+    </section>
+
     <!-- Content Section -->
     <section id="content" class="section bg-gray-50">
       <div class="container">
         <h2 class="text-3xl md:text-4xl font-heading font-bold mb-12 text-center animate-text">
-          Our Content
+          Premiers stades de la maladie : des avancées clés avec l'IA.
         </h2>
         <div class="grid md:grid-cols-2 gap-8">
+          <!-- Video Section 1 -->
           <div class="bg-white rounded-lg shadow-md p-6 animate-text">
-            <h3 class="text-xl font-bold mb-4">Video Section 1</h3>
+            <h3 class="text-xl font-bold mb-4">Avant l'apport des IA</h3>
             <div class="aspect-video bg-gray-200 mb-4">
-              <!-- Video placeholder -->
+              <!-- Fancybox Video -->
+              <a href="https://res.cloudinary.com/dtgt8j8u8/video/upload/v1737469866/before_ai_v2_mo1cnn.mp4" data-fancybox="gallery" data-caption="Before AI">
+                <video class="rounded-lg cursor-pointer" autoplay muted loop>
+                  <source src="https://res.cloudinary.com/dtgt8j8u8/video/upload/v1737469866/before_ai_v2_mo1cnn.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </a>
             </div>
             <p class="text-gray-600">
-              Description of the video content goes here.
+              Malgré les aides, ces personnes restent souvent solitaire aux premiers stades de la maladie. Sans la maîtrise du big data avec le deep learning et autres avancées, il reste difficile de faciliter et égayer un quotidien qui se délite de jour en jour.
             </p>
           </div>
+
+          <!-- Video Section 2 -->
           <div class="bg-white rounded-lg shadow-md p-6 animate-text">
-            <h3 class="text-xl font-bold mb-4">Video Section 2</h3>
+            <h3 class="text-xl font-bold mb-4">After AI</h3>
             <div class="aspect-video bg-gray-200 mb-4">
-              <!-- Video placeholder -->
+              <!-- Fancybox Video -->
+              <a href="https://res.cloudinary.com/dtgt8j8u8/video/upload/v1737469859/robot_meet_alzheimer_v2_rnib91.mp4" data-fancybox="gallery" data-caption="After AI">
+                <video class="rounded-lg cursor-pointer" autoplay muted loop>
+                  <source src="https://res.cloudinary.com/dtgt8j8u8/video/upload/v1737469859/robot_meet_alzheimer_v2_rnib91.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </a>
             </div>
             <p class="text-gray-600">
-              Description of the video content goes here.
+              Explorez comment l'IA peut transformer le quotidien des personnes atteintes d'Alzheimer.
             </p>
           </div>
+        </div>
+
+        <!-- Additional Descriptive Text -->
+        <div class="mt-12 text-center text-gray-700">
+          <p>
+            Ces vidéos illustrent les apports marquant de l'IA lors des premiers stades : la personne encore consciente de sa tragédie peut alors éviter de subir de plein fouet la déchéance dans son quotidien et d'être extrêmement dépendante des aides avec tous les risques encourus. Un robot combiné avec la présence humaine des aides traditionnels pourrait aider à gagner du terrain pour avoir une vie bien meilleur lors de ces premiers stades.
+          </p>
         </div>
       </div>
     </section>
@@ -130,6 +204,18 @@
         </p>
       </div>
     </section>
+
+    <!-- Fancybox Initialization -->
+    <script>
+      Fancybox.bind("[data-fancybox='gallery']", {
+        Toolbar: true,
+        smallBtn: true,
+        video: {
+          autoplay: true
+        }
+      });
+    </script>
+
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
