@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <title>Modern SPA</title>
   </head>
   <body class="bg-white text-gray-900">
@@ -119,27 +124,62 @@
           Our Content
         </h2>
         <div class="grid md:grid-cols-2 gap-8">
+          <!-- Video Section 1 -->
           <div class="bg-white rounded-lg shadow-md p-6 animate-text">
-            <h3 class="text-xl font-bold mb-4">Video Section 1</h3>
+            <h3 class="text-xl font-bold mb-4">Before AI</h3>
             <div class="aspect-video bg-gray-200 mb-4">
-              <!-- Video placeholder -->
+              <!-- Fancybox Video -->
+              <a href="path-to-before-ai-video.mp4" data-fancybox="gallery" data-caption="Before AI">
+                <video class="rounded-lg cursor-pointer" autoplay muted loop>
+                  <source src="path-to-before-ai-video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </a>
             </div>
             <p class="text-gray-600">
-              Description of the video content goes here.
+              Découvrez comment les tâches étaient réalisées avant l'introduction de l'intelligence artificielle, avec des processus manuels et des limitations évidentes en termes d'efficacité et de créativité.
             </p>
           </div>
+
+          <!-- Video Section 2 -->
           <div class="bg-white rounded-lg shadow-md p-6 animate-text">
-            <h3 class="text-xl font-bold mb-4">Video Section 2</h3>
+            <h3 class="text-xl font-bold mb-4">After AI</h3>
             <div class="aspect-video bg-gray-200 mb-4">
-              <!-- Video placeholder -->
+              <!-- Fancybox Video -->
+              <a href="path-to-after-ai-video.mp4" data-fancybox="gallery" data-caption="After AI">
+                <video class="rounded-lg cursor-pointer" autoplay muted loop>
+                  <source src="path-to-after-ai-video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </a>
             </div>
             <p class="text-gray-600">
-              Description of the video content goes here.
+              Explorez comment l'IA a transformé ces mêmes tâches, offrant des solutions innovantes, automatisées et plus rapides pour des résultats exceptionnels.
             </p>
           </div>
         </div>
+
+        <!-- Additional Descriptive Text -->
+        <div class="mt-12 text-center text-gray-700">
+          <p>
+            Ces vidéos illustrent la transition marquante entre les méthodes traditionnelles et les approches modernes alimentées par l'intelligence artificielle.
+            Une révolution qui redéfinit notre façon de travailler, de créer et d'interagir avec la technologie.
+          </p>
+        </div>
       </div>
     </section>
+
+    <!-- Fancybox Initialization -->
+    <script>
+      Fancybox.bind("[data-fancybox='gallery']", {
+        Toolbar: true,
+        smallBtn: true,
+        video: {
+          autoplay: true
+        }
+      });
+    </script>
+
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
